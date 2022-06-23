@@ -25,7 +25,7 @@ html {
 .nav__bar {
   display: flex;
 
-  margin: 3rem 0rem 0rem 0rem;
+  margin: 3rem 0rem;
   display: flex;
   gap: 2.4rem;
   align-items: center;
@@ -50,17 +50,19 @@ html {
   align-items: center;
   width: 15rem;
   height: 3rem;
-  color: #1098ad;
+  color: #495057;
   margin-right: 3rem;
   font-size: 2.4rem;
+  transition: all 1s;
+  background-color: inherit;
 }
 .login_btn:hover {
   color: #212529;
 }
-.btn_icon {
-  color: #1098ad;
-  width: 4rem;
-  height: 2.6rem;
+.lbtn_icon {
+  color: #495057;
+  width: 5rem;
+  height: 3.6rem;
 }
 
 .content {
@@ -174,4 +176,212 @@ Proficiencies
 }
 .prof_text {
   font-size: 3rem;
+}
+
+/* Presentation section */
+.presentation_section {
+  display: flex;
+  height: 200vh;
+  margin-top: 25rem;
+  justify-content: flex-start;
+}
+.subheading--1 {
+  width: 50%;
+  background-image: url(/img/proferincies1.jpg);
+  background-size: cover;
+}
+.subheading--2 {
+  width: 50%;
+  background-size: cover;
+  background-image: url(/img/proferincies2.jpg);
+}
+.pre_heading {
+  color: #e9ecef;
+  text-align: left;
+  padding-top: 100rem;
+  font-size: 5.4rem;
+  padding-left: 7rem;
+}
+.pres_btn {
+  cursor: pointer;
+  width: 10rem;
+  height: 7rem;
+  background: none;
+  color: #e9ecef;
+  border: 1px solid #e9ecef;
+  margin-left: 10rem;
+  margin-top: 3rem;
+  padding: 1rem 0.5rem;
+  font-size: 1.8rem;
+  border-radius: 15%;
+  transition: all 1s;
+}
+
+.pres_btn:hover {
+  background-color: #e9ecef;
+  color: #212529;
+}
+
+/* Carusel section */
+.carusel_section {
+  /* position: absolute; */
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: -6rem;
+}
+.carusel_img {
+  width: 55%;
+  height: 110vh;
+}
+
+.btn__carusel {
+  height: 5rem;
+  color: #e9ecef;
+  text-align: center;
+  border: none;
+  background-color: inherit;
+}
+.btn_right {
+  position: relative;
+  top: 0;
+  left: -260rem;
+  color: #1098ad;
+  width: 5rem;
+  text-align: left;
+}
+.btn_left {
+  position: relative;
+  top: 0;
+  left: 8rem;
+  color: #1098ad;
+  width: 5rem;
+  text-align: left;
+}
+.btn_icon {
+  color: #e9ecef;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+}
+
+.btn_icon:hover {
+  background-color: #ced4da;
+  color: #212529;
+  transition: all 0.5s;
+}
+
+/* Contact section */
+.contact_secton {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: space-around;
+  height: 100vh;
+  gap: 8rem;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  font-size: 2.5rem;
+}
+.input {
+  margin-top: 1rem;
+  padding: 1rem;
+  width: 35.2rem;
+  height: 6rem;
+  font-size: 2rem;
+}
+.input--1 {
+  width: 71rem;
+}
+.phone__margin {
+  display: inline;
+}
+.submit {
+  border: 3px solid #212529;
+  cursor: pointer;
+  letter-spacing: 1px;
+  background-color: #343a40;
+  color: #f8f9fa;
+  font-size: 2.4rem;
+  display: inline;
+  padding: 2rem 5rem;
+  align-self: center;
+  transition: all 1s;
+  border-radius: 5px;
+}
+.submit:hover {
+  background-color: #212529;
+  color: #e9ecef;
+}
+.contact_context {
+  font-size: 6rem;
+  text-align: center;
+  font-weight: 600;
+}
+.map__section {
+  height: 100vh;
+}
+#map {
+  width: 100%;
+  height: 40rem;
+  background-color: grey;
+}
+.footer {
+  color: #ced4da;
+  font-size: 3rem;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #212529;
+}
+.social-link {
+  text-decoration: none;
+  color: #ced4da;
+}
+.copyright {
+  margin-top: 8rem;
+  font-size: 2rem;
+}
+.form_input {
+  width: 40rem;
+  height: 5rem;
+  font-size: 2rem;
+  padding: 1rem;
+}
+.submitting {
+  display: inline-block;
+  align-self: center;
+  justify-self: center;
+  margin-bottom: 2rem;
+}
+.footer__heading {
+  display: inline-block;
+  margin: 2rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.submit--2 {
+  border: 3px solid #212529;
+  cursor: pointer;
+  letter-spacing: 1px;
+  background-color: #e9ecef;
+  color: #212529;
+  font-size: 2.4rem;
+  display: inline;
+  padding: 1.8rem 3.6rem;
+  align-self: center;
+  transition: all 1s;
+  border-radius: 5px;
+}
+.submit--2:hover {
+  background-color: #212529;
+  color: #e9ecef;
 }

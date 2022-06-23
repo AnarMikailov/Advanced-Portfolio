@@ -6,9 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin="" />
+    <script defer src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
     <script defer src="script.js"></script>
   </head>
   <body>
+
     <header class="header">
       <h1 class="name">Anar Mikayilov</h1>
       <a class="nav_link" href="#"> Members</a>
@@ -21,7 +26,7 @@
         <button class="login_btn">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="btn_icon"
+            class="lbtn_icon"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
@@ -252,5 +257,94 @@
       <span class="prof_heading">Proficiencies</span> <br />
       <span class="prof_text">Tricks of the Trade</span>
     </div>
+    <div class="presentation_section">
+      <div class="subheading--1">
+        <h2 class="pre_heading">
+          Front-end Development <br />
+          Intermediate
+        </h2>
+        <button class="pres_btn">Get More</button>
+      </div>
+      <div class="subheading--2">
+        <h2 class="pre_heading">English fluency <br />Intermediate</h2>
+        <button class="pres_btn">Get More</button>
+      </div>
+    </div>
+
+    <div class="carusel_section">
+      <button class="btn__carusel btn_left">
+        <svg xmlns="http://www.w3.org/2000/svg" class="btn_icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M11 17l-5-5m0 0l5-5m-5 5h12" />
+        </svg>
+        </svg>
+      </button>
+      <img class="carusel_img" src="/img/karusel4.jpg" alt="Karusel photo" />
+      <img class="carusel_img" src="/img/karusel3.jpg" alt="Karusel photo" />
+      <img class="carusel_img" src="/img/karusel2.jpg" alt="Karusel photo" />
+      <img class="carusel_img" src="/img/karusel5.jpg" alt="Karusel photo" />
+      <img class="carusel_img" src="/img/karusel1.jpg" alt="Karusel photo" />
+
+      <button class="btn__carusel btn_right">
+        <svg xmlns="http://www.w3.org/2000/svg" class="btn_icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+        </svg>
+      </button>
+    </div> 
+ <div class="contact_secton">
+ <div class="contact_context">
+
+   Contact <br> <br> <br> a.v.mikayilov@gmail.com <br> <br>
+   +994502506200
+  </div>
+  
+<form  class="form" action="#">
+  Name* <br>
+  <input class="input input--1" type="text" required placeholder="Enter your name"><br> 
+  Address* <br>
+  <input class="input input--1" type="text" required placeholder="Enter your address"> <br>
+ Email* &emsp; &emsp;  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&emsp; Phone <br>  
+ <div>
+   <input class="input" type="email" required placeholder="Enter your email">   
+   <input class="input" type="number" placeholder="Enter your phone number" > <br>
+  </div>   <br>             
+ Subject <br> 
+  <input class="input input--1" type="text" placeholder="Type your subject"> <br>
+ Message <br>
+  <input class="input input--1" type="text" placeholder="Type message here"><br>
+  <button class="submit" type="submit">Submit</button>
+</form>
+
+
+ </div>
+<div id="map"></div>
+
+<footer class="footer">
+
+  <h3 class="footer__heading">Subscribe Form</h3> 
+  <form action="">
+    <input class="form_input" type="email" name="" id="" placeholder="Email address"> <br>
+    <input  class="submit--2" type="submit" value="Submit"> <br>
+    <span class="submitting">Thanks for submitting!</span>
+
+    <address>Azerbaijan,Baku</address>
+  </form>
+
+  <div class="social_networks">
+    <ion-icon name="logo-facebook"></ion-icon>
+    <ion-icon name="logo-twitter"></ion-icon>
+    <ion-icon name="logo-linkedin"></ion-icon>
+  </div>
+  <p class="copyright">
+    &copy; Copyright by
+    <a
+      class="social-link"
+      target="_blank"
+      href="https://twitter.com/jonasschmedtman"
+      >Anar Mikayilov</a
+    >.
+    
+  </p>
+</div>
+</footer>
   </body>
 </html>
