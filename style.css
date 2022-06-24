@@ -9,10 +9,21 @@ html {
 }
 .header {
   text-align: center;
-  margin: 0, auto;
   margin-top: 8rem;
   font-family: sans-serif;
   font-size: 2rem;
+}
+.learn_more {
+  display: inline-block;
+  background: none;
+  font-size: 1.9rem;
+  font-family: inherit;
+  font-weight: 400;
+  border: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  cursor: pointer;
+  transition: all 0.7s;
 }
 .name {
   color: #212529;
@@ -325,7 +336,7 @@ Proficiencies
 }
 #map {
   width: 100%;
-  height: 40rem;
+  height: 50rem;
   background-color: grey;
 }
 .footer {
@@ -365,8 +376,6 @@ Proficiencies
 form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 .submit--2 {
   border: 3px solid #212529;
@@ -384,4 +393,220 @@ form {
 .submit--2:hover {
   background-color: #212529;
   color: #e9ecef;
+}
+.social {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1.2rem;
+}
+.social_networks {
+  text-decoration: none;
+  color: #ced4da;
+}
+address {
+  text-align: center;
+}
+
+.login__section {
+  font-family: Verdana;
+  height: 120vh;
+  font-size: 5rem;
+  color: #212529;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding-bottom: 30rem;
+}
+
+.sign__section {
+  font-family: Verdana;
+  height: 120vh;
+  font-size: 5rem;
+  color: #212529;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding-bottom: 30rem;
+}
+.sign_in {
+  font-size: 6rem;
+}
+
+.close_btn {
+  cursor: pointer;
+  width: 5rem;
+  background-color: inherit;
+  border: none;
+  top: -6rem;
+  left: 80rem;
+  position: relative;
+  color: #343a40;
+}
+.signup__facebook {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border: none;
+  background-color: #3b5998;
+  width: 40rem;
+  padding: 2rem 1.6rem;
+  font-size: 2.2rem;
+  color: #fff;
+}
+.signup__google {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border: none;
+  background-color: #4285f4;
+  width: 40rem;
+  padding: 2rem 1.6rem;
+  font-size: 2.4rem;
+  color: #fff;
+}
+.signup__google:hover {
+  background-color: #538ef5;
+}
+.signup__facebook:hover {
+  background-color: #4b66a0;
+}
+.signup__email {
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  gap: 1rem;
+  background-color: inherit;
+  width: 40rem;
+  padding: 2rem 1.6rem;
+  font-size: 2.4rem;
+  color: #000;
+}
+.signup__email:hover {
+  color: #e9ecef;
+  background-color: #c5221f;
+}
+.border {
+  width: 15rem;
+  border-bottom: 1px solid #212529;
+}
+.or {
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  justify-content: center;
+}
+
+.member {
+  font-size: 2.6rem;
+}
+.cont_member {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+.login_member {
+  text-decoration: none;
+  color: #1098ad;
+  font-size: 2.4rem;
+}
+.slider {
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+
+  /* IN THE END */
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 120vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* THIS creates the animation! */
+  transition: transform 1s;
+}
+
+.slide > img {
+  /* Only for images that have different size than slide */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider__btn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+
+  border: none;
+  background: rgba(255, 255, 255, 0.7);
+  font-family: inherit;
+  color: #333;
+  border-radius: 50%;
+  height: 5.5rem;
+  width: 5.5rem;
+  font-size: 3.25rem;
+  cursor: pointer;
+}
+
+.slider__btn--left {
+  left: 6%;
+  transform: translate(-50%, -50%);
+}
+
+.slider__btn--right {
+  right: 6%;
+  transform: translate(50%, -50%);
+}
+
+.dots {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.dots__dot {
+  border: none;
+  background-color: #b9b9b9;
+  opacity: 0.7;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  margin-right: 1.75rem;
+  cursor: pointer;
+  transition: all 0.5s;
+
+  /* Only necessary when overlying images */
+  /* box-shadow: 0 0.6rem 1.5rem rgba(0, 0, 0, 0.7); */
+}
+
+.dots__dot:last-child {
+  margin: 0;
+}
+
+.dots__dot--active {
+  /* background-color: #fff; */
+  background-color: #fff;
+  opacity: 1;
+}
+
+.hidden {
+  display: none;
 }

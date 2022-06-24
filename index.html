@@ -13,8 +13,7 @@
     <script defer src="script.js"></script>
   </head>
   <body>
-
-    <header class="header">
+    <header class="header ">
       <h1 class="name">Anar Mikayilov</h1>
       <a class="nav_link" href="#"> Members</a>
       <a class="nav_link" href="#"> Home </a>
@@ -25,33 +24,70 @@
         <nav class="nav__bar"></nav>
         <button class="login_btn">
           <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="lbtn_icon"
-            viewBox="0 0 20 20"
-            fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg"
+          class="lbtn_icon"
+          viewBox="0 0 20 20"
+          fill="currentColor"
           >
-            <path
+          <path
               fill-rule="evenodd"
               d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"
               clip-rule="evenodd"
-            />
-          </svg>
-          Log in
-        </button>
-      </div>
+              />
+            </svg>
+            Log in
+          </button>
+        </div>
     </header>
+    
+    <div class="sign__section hidden ">
+      <button class="close_btn"><svg xmlns="http://www.w3.org/2000/svg" class="x_icon" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+      </svg></button>
+      <h2 class="sign_in">Sign up</h2>
+      <div class="cont_member">
 
+        <span class="member" >Already a member? </span><a class="btnn login_member" href="">Log in</a> 
+      </div>
+      <button class="signup__facebook"><ion-icon name="logo-facebook"></ion-icon> Sign up with Facebook</button>
+      <button class="signup__google"><ion-icon name="logo-google"></ion-icon> Sign up with Google</button>
+     <div class="or">
+
+       <div class="border"></div> or <div class="border"></div>
+      </div>
+      <button class="signup__email"><ion-icon name="mail-outline"></ion-icon> Sign up with Email</button>
+
+      </div>
+    <div class="login__section hidden ">
+      <button class="close_btn"><svg xmlns="http://www.w3.org/2000/svg" class="x_icon" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+      </svg></button>
+      <h2 class="sign_in">Log in</h2>
+      <div class="cont_member">
+
+        <span class="member" >New to site? </span><a class="btnn login_member" href="">Sign up</a> 
+      </div>
+      <button class="signup__facebook"><ion-icon name="logo-facebook"></ion-icon> Log in with Facebook</button>
+      <button class="signup__google"><ion-icon name="logo-google"></ion-icon> Log in with Google</button>
+     <div class="or">
+
+       <div class="border"></div> or <div class="border"></div>
+      </div>
+      <button class="signup__email"><ion-icon name="mail-outline"></ion-icon> Log in with Email</button>
+
+      </div>
     <div class="content">
       <!-- <img
         class="content_img responsive"
         src="/img/1920.jpg"
         alt="Man doing his works"
-      /> -->
-
-      <h2 class="content_text">
-        Meet Anar <br />
-        Mikayilov
-      </h2>
+        /> -->
+        
+        <h2 class="content_text">
+          Meet Anar <br />
+          Mikayilov <br>
+          <button class="learn_more">Learn more ↓</button>
+      </h2> 
     </div>
     <div class="introduce__section">
       <h2 class="introduce__heading">Get To Know Me</h2>
@@ -271,25 +307,17 @@
       </div>
     </div>
 
-    <div class="carusel_section">
-      <button class="btn__carusel btn_left">
-        <svg xmlns="http://www.w3.org/2000/svg" class="btn_icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M11 17l-5-5m0 0l5-5m-5 5h12" />
-        </svg>
-        </svg>
-      </button>
-      <img class="carusel_img" src="/img/karusel4.jpg" alt="Karusel photo" />
-      <img class="carusel_img" src="/img/karusel3.jpg" alt="Karusel photo" />
-      <img class="carusel_img" src="/img/karusel2.jpg" alt="Karusel photo" />
-      <img class="carusel_img" src="/img/karusel5.jpg" alt="Karusel photo" />
-      <img class="carusel_img" src="/img/karusel1.jpg" alt="Karusel photo" />
+    <div class="slider">
 
-      <button class="btn__carusel btn_right">
-        <svg xmlns="http://www.w3.org/2000/svg" class="btn_icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-        </svg>
-      </button>
-    </div> 
+      <div class="slide"><img src="img/karusel1.jpg" alt="Photo 1" /></div> 
+      <div class="slide"><img src="img/karusel2.jpg" alt="Photo 1" /></div> 
+      <div class="slide"><img src="img/karusel3.jpg" alt="Photo 1" /></div> 
+      <div class="slide"><img src="img/karusel4.jpg" alt="Photo 1" /></div> 
+      <div class="slide"><img src="img/karusel5.jpg" alt="Photo 1" /></div> 
+     <button class="slider__btn slider__btn--left">&larr;</button>
+     <button class="slider__btn slider__btn--right">&rarr;</button>
+     <div class="dots"></div>
+   </div> 
  <div class="contact_secton">
  <div class="contact_context">
 
@@ -329,13 +357,16 @@
     <address>Azerbaijan,Baku</address>
   </form>
 
-  <div class="social_networks">
-    <ion-icon name="logo-facebook"></ion-icon>
-    <ion-icon name="logo-twitter"></ion-icon>
-    <ion-icon name="logo-linkedin"></ion-icon>
+  <div class="social">
+
+<a class="social_networks" href="http://">    <ion-icon name="logo-twitter"></ion-icon>
+</a>
+<a class="social_networks" href="http://">    <ion-icon name="logo-linkedin"></ion-icon>
+</a>
+
   </div>
   <p class="copyright">
-    &copy; Copyright by
+    &copy; Copyright   by
     <a
       class="social-link"
       target="_blank"
@@ -346,5 +377,7 @@
   </p>
 </div>
 </footer>
+
+
   </body>
 </html>
