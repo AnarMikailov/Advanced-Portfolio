@@ -441,10 +441,18 @@ address {
   width: 5rem;
   background-color: inherit;
   border: none;
-  top: -6rem;
-  left: 80rem;
+  top: 10rem;
+  left: 170rem;
   position: relative;
   color: #343a40;
+}
+.sign_btn_box,
+.login_btn_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.6rem;
 }
 .signup__facebook {
   display: flex;
@@ -606,7 +614,68 @@ address {
   background-color: #fff;
   opacity: 1;
 }
+.cont {
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+}
+/* Logn in section */
+.lognin__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+  width: 40rem;
+}
+.lognin_mail {
+  display: inline-block;
+  padding: 1.4rem 0;
+  border: none;
+  border-bottom: 1px solid #000;
+  margin-bottom: 2rem;
+  font-size: 2.4rem;
+  outline: none;
+}
 
+.Lognin_text {
+  font-size: 2rem;
+  text-align: left;
+}
+.foget_pasword {
+  font-size: 2rem;
+  color: #000;
+}
+
+.lognin_btn {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  border: none;
+  background-color: #3b5998;
+  width: 40rem;
+  padding: 2rem 1.6rem;
+  font-size: 2.2rem;
+  color: #fff;
+}
+
+.facebook_icon {
+  height: 6.5rem;
+  width: 6.5rem;
+}
+.google_icon {
+  height: 4.5rem;
+  width: 4.5rem;
+}
+.login_logos,
+.sign_logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1.6rem;
+  gap: 1.6rem;
+}
 .hidden {
   display: none;
 }

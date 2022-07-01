@@ -19,7 +19,7 @@
       <a class="nav_link" href="#"> Home </a>
       <a class="nav_link" href="#">Programs</a>
       <a class="nav_link" href="#"> Plans & Pricing</a>
-      <a class="nav_link" href="#">Groups List</a>
+      <button class="nav_link cont" href="#">Contact</button>
       <div class="flex__container">
         <nav class="nav__bar"></nav>
         <button class="login_btn">
@@ -39,44 +39,81 @@
           </button>
         </div>
     </header>
-    
+    <!-- Sign Section -->
+    <button class="close_btn hidden"><svg xmlns="http://www.w3.org/2000/svg" class="x_icon" viewBox="0 0 20 20" fill="currentColor">
+      <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+    </svg></button>
     <div class="sign__section hidden ">
-      <button class="close_btn"><svg xmlns="http://www.w3.org/2000/svg" class="x_icon" viewBox="0 0 20 20" fill="currentColor">
-        <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
-      </svg></button>
+    
       <h2 class="sign_in">Sign up</h2>
       <div class="cont_member">
 
         <span class="member" >Already a member? </span><a class="btnn login_member" href="">Log in</a> 
       </div>
-      <button class="signup__facebook"><ion-icon name="logo-facebook"></ion-icon> Sign up with Facebook</button>
-      <button class="signup__google"><ion-icon name="logo-google"></ion-icon> Sign up with Google</button>
+      <div class=" sign_btn_box">
+        <button class="signup__facebook"><ion-icon name="logo-facebook"></ion-icon> Sign up with Facebook</button>
+        <button class="signup__google"><ion-icon name="logo-google"></ion-icon> Sign up with Google</button>
+      </div>
+        <div class="sign__form  hidden ">
+          <form class="lognin_form" action="">
+            <label class="Lognin_text" for="Email">Email*</label>
+        <input class="lognin_mail" type="email">
+        <label class="lognin_pasw_text Lognin_text" for="password">Password*</label>
+        <input class="lognin_pasword lognin_mail" type="password">
+        <label class="lognin_pasw_text Lognin_text" for="password">Password again*</label>
+        <input class="lognin_pasword lognin_mail" type="password">
+        </form>
+        <button class="lognin_btn" >Sign up</button>
+        
+            </div>
+
      <div class="or">
+      <a class="logos hidden" href=""><img class="facebook_icon" src="/img/facebook-icon.png" alt="facebook icon"><img class="google_icon" src="/img/Illustration-of-Google-icon-on-transparent-background-PNG.png" alt="facebook icon"></a>
 
        <div class="border"></div> or <div class="border"></div>
       </div>
+      <a class="sign_logos hidden" href=""><img class="facebook_icon" src="/img/facebook-icon.png" alt="facebook icon"><img class="google_icon" src="/img/Illustration-of-Google-icon-on-transparent-background-PNG.png" alt="facebook icon"></a>
+
       <button class="signup__email"><ion-icon name="mail-outline"></ion-icon> Sign up with Email</button>
 
       </div>
+      <!-- Login section -->
+
     <div class="login__section hidden ">
-      <button class="close_btn"><svg xmlns="http://www.w3.org/2000/svg" class="x_icon" viewBox="0 0 20 20" fill="currentColor">
-        <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
-      </svg></button>
       <h2 class="sign_in">Log in</h2>
       <div class="cont_member">
 
         <span class="member" >New to site? </span><a class="btnn login_member" href="">Sign up</a> 
       </div>
-      <button class="signup__facebook"><ion-icon name="logo-facebook"></ion-icon> Log in with Facebook</button>
-      <button class="signup__google"><ion-icon name="logo-google"></ion-icon> Log in with Google</button>
-     <div class="or">
+      <div class="login_btn_box">
+      <button class="signup__facebook login__facebook"><ion-icon name="logo-facebook"></ion-icon> Log in with Facebook</button>
+      <button class="signup__google login__google"><ion-icon name="logo-google"></ion-icon> Log in with Google</button>
+</div>
+<div class="lognin__form hidden ">
+  <form class="lognin_form" action="">
+    <label class="Lognin_text" for="Email">Email*</label>
+<input class="lognin_mail" type="email">
+<label class="lognin_pasw_text Lognin_text" for="password">Password*</label>
+<input class="lognin_pasword lognin_mail" type="password">
+</form>
+<a class="foget_pasword" href="#">Forgot password?</a>
+<button class="lognin_btn" >Log in</button>
+
+    </div>
+
+      <div class="or">
 
        <div class="border"></div> or <div class="border"></div>
       </div>
-      <button class="signup__email"><ion-icon name="mail-outline"></ion-icon> Log in with Email</button>
+      <a class="login_logos hidden" href=""><img class="facebook_icon" src="/img/facebook-icon.png" alt="facebook icon"><img class="google_icon" src="/img/Illustration-of-Google-icon-on-transparent-background-PNG.png" alt="facebook icon"></a>
 
-      </div>
-    <div class="content">
+      <button class="signup__email login__email"><ion-icon name="mail-outline"></ion-icon> Log in with Email</button>
+
+     
+     
+    </div>
+
+       <div class="content">
       <!-- <img
         class="content_img responsive"
         src="/img/1920.jpg"

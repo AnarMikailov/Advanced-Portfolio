@@ -14,12 +14,32 @@ const loginMember = document.querySelector(".login_member");
 const signInMember = document.querySelector(".sign_in");
 const signupFacebook = document.querySelector(".signup__facebook");
 const signupGoogle = document.querySelector(".signup__google");
+const loginGoogle = document.querySelector(".login__google");
+const loginFacebook = document.querySelector(".login__facebook");
 const signupEmail = document.querySelector(".signup__email");
+const LoginEmail = document.querySelector(".login__email");
 const toggleSign = document.querySelectorAll(".btnn");
+const navCont = document.querySelector(".cont");
+const contactSection = document.querySelector(".contact_secton");
+const loginForm = document.querySelector(".lognin__form");
+const signForm = document.querySelector(".sign__form");
+const closeIcon = document.querySelectorAll(".x_icon");
+const loginButtonBox = document.querySelector(".login_btn_box");
+const signbuttonBox = document.querySelector(".sign_btn_box");
+const or = document.querySelector(".or");
 const closeModal = function () {
   body.style.overflow = "visible";
   header.classList.remove("hidden");
   signSection.classList.add("hidden");
+  loginSection.classList.add("hidden");
+};
+
+const openModal = function () {
+  body.style.overflow = "hidden";
+  header.classList.add("hidden");
+  // signSection.classList.remove("hidden");
+  loginSection.classList.remove("hidden");
+  closeBtn.classList.remove("hidden");
 };
 
 document.querySelector("#map").addEventListener("click", function () {
@@ -48,12 +68,14 @@ document.querySelector("#map").addEventListener("click", function () {
 });
 
 login.addEventListener("click", function () {
-  body.style.overflow = "hidden";
-  header.classList.add("hidden");
-  signSection.classList.remove("hidden");
+  openModal();
 });
-closeBtn.addEventListener("click", function () {
-  closeModal();
+
+closeIcon.forEach((el) => {
+  el.addEventListener("click", function () {
+    closeModal();
+    closeBtn.classList.remove("hidden");
+  });
 });
 
 //Close modal with esc key
@@ -62,7 +84,9 @@ window.onkeyup = function (event) {
     closeModal();
   }
 };
-
+navCont.addEventListener("click", function () {
+  contactSection.scrollIntoView({ behavior: "smooth" });
+});
 learnMore.addEventListener("click", function () {
   introduceSection.scrollIntoView({ behavior: "smooth" });
 });
@@ -150,5 +174,25 @@ toggleSign.forEach((el) => {
     e.preventDefault();
     signSection.classList.toggle("hidden");
     loginSection.classList.toggle("hidden");
+    loginButtonBox.classList.remove("hidden");
+    loginForm.classList.add("hidden");
+    LoginEmail.classList.remove("hidden");
+    document.querySelector(".login_logos").classList.add("hidden");
+    signbuttonBox.classList.remove("hidden");
+    signForm.classList.add("hidden");
+    signupEmail.classList.remove("hidden");
+    document.querySelector(".sign_logos").classList.add("hidden");
   });
+});
+LoginEmail.addEventListener("click", function () {
+  loginButtonBox.classList.add("hidden");
+  loginForm.classList.remove("hidden");
+  LoginEmail.classList.add("hidden");
+  document.querySelector(".login_logos").classList.remove("hidden");
+});
+signupEmail.addEventListener("click", function () {
+  signbuttonBox.classList.add("hidden");
+  signForm.classList.remove("hidden");
+  signupEmail.classList.add("hidden");
+  document.querySelector(".sign_logos").classList.remove("hidden");
 });
